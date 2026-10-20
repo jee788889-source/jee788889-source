@@ -32,5 +32,5 @@ I build websites and web apps, and help businesses automate repetitive work with
 <!-- Generated daily by .github/workflows/profile-3d.yml from real GitHub contribution data. Appears after the first workflow run. -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg" />
-  <img src="profile-3d-contrib/profile-gitblue.svg" alt="3D isometric chart of my GitHub contributions" width="100%" />
+  <img src="profile-3d-contrib/profile-green.svg" alt="3D isometric chart of my GitHub contributions" width="100%" />
 </picture>
