@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-labelledby="t d">
-  <title id="t">Mian G. — Business automation, AI workflows, web</title>
-  <desc id="d">Dark crimson hero card with the name Mian G. in large serif type, a tagline, service chips, and an original anime-style avatar inside a glowing ring.</desc>
+  <title id="t">Ali Hamza. — Business automation, AI workflows, web</title>
+  <desc id="d">Dark crimson hero card with the name Ali Hamza. in large serif type, a tagline, service chips, and an original anime-style avatar inside a glowing ring.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0c0509"/>
@@ -41,7 +41,7 @@
     <text x="90" y="68" class="mono" font-size="13" fill="#f9a8d4" letter-spacing="1">~/automation · ai · web</text>
 
     <g class="up"><text x="56" y="128" class="mono" font-size="13" fill="#b48a9d" letter-spacing="3">01 · AUTOMATION · AI WORKFLOWS · WEB · SEO</text></g>
-    <g class="up d1"><text x="50" y="250" class="serif" font-size="112" fill="#fdf2f8">Mian G<tspan class="blink" fill="#e0267a">.</tspan></text></g>
+    <g class="up d1"><text x="50" y="250" class="serif" font-size="112" fill="#fdf2f8">Ali Hamza<tspan class="blink" fill="#e0267a">.</tspan></text></g>
     <g class="up d2"><text x="56" y="300" class="serif" font-style="italic" font-size="26" fill="#f5d0e2">Automating busywork. Building systems that run themselves.</text></g>
 
     <g class="up d3 mono" font-size="13" letter-spacing="1">

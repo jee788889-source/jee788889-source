@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-labelledby="t">
-  <title id="t">Let's automate something worth automating. — Mian G</title>
+  <title id="t">Let's automate something worth automating. — Ali Hamza</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#4a0f2c"/><stop offset="1" stop-color="#140810"/></linearGradient>
     <radialGradient id="g" cx=".5" cy="1" r=".7"><stop offset="0" stop-color="#e0267a" stop-opacity=".45"/><stop offset="1" stop-color="#e0267a" stop-opacity="0"/></radialGradient>
@@ -16,6 +16,6 @@
   <rect class="pulse" width="1200" height="240" rx="18" fill="url(#g)"/>
   <text x="600" y="56" text-anchor="middle" class="mono" font-size="13" fill="#e0267a" letter-spacing="3">05 · CONNECT</text>
   <text x="600" y="112" text-anchor="middle" class="serif" font-size="40" fill="#fdf2f8">Let's automate something <tspan font-style="italic" fill="#f9a8d4">worth automating.</tspan></text>
-  <text x="600" y="180" text-anchor="middle" class="serif sig" font-style="italic" font-size="44" fill="none" stroke="#f9a8d4" stroke-width="1.2">Mian G</text>
+  <text x="600" y="180" text-anchor="middle" class="serif sig" font-style="italic" font-size="44" fill="none" stroke="#f9a8d4" stroke-width="1.2">Ali Hamza</text>
   <text x="600" y="216" text-anchor="middle" class="mono" font-size="12" fill="#b48a9d" letter-spacing="3">BUILDING SYSTEMS THAT RUN THEMSELVES</text>
 </svg>
