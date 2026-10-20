@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-labelledby="t d">
   <title id="t">Mian G. — Business automation, AI workflows, web</title>
-  <desc id="d">Dark crimson hero card with the name Mian G. in large serif type, a tagline, service chips, and an MG monogram inside a glowing ring.</desc>
+  <desc id="d">Dark crimson hero card with the name Mian G. in large serif type, a tagline, service chips, and an original anime-style avatar inside a glowing ring.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0c0509"/>
@@ -53,8 +53,68 @@
 
     <circle class="spin" cx="960" cy="230" r="142" fill="none" stroke="url(#edge)" stroke-width="3" stroke-dasharray="210 90" stroke-linecap="round"/>
     <circle class="rev" cx="960" cy="230" r="160" fill="none" stroke="#f9a8d4" stroke-opacity=".35" stroke-dasharray="2 10"/>
-    <circle cx="960" cy="230" r="124" fill="url(#disc)" stroke="#e0267a" stroke-opacity=".5"/>
-    <text x="960" y="262" text-anchor="middle" class="serif" font-size="96" fill="#fdf2f8">MG</text>
+    <svg x="836" y="106" width="248" height="248" viewBox="0 0 400 400"><defs>
+    <radialGradient id="bgA" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#5a1236"/><stop offset="1" stop-color="#12060c"/></radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde3d6"/><stop offset="1" stop-color="#f2c2ae"/></linearGradient>
+    <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b1020"/><stop offset="1" stop-color="#140810"/></linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a0f2e"/><stop offset="1" stop-color="#3b1a52"/></linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a1145"/><stop offset=".6" stop-color="#e0267a"/><stop offset="1" stop-color="#ff8cc4"/></linearGradient>
+    <clipPath id="circ"><circle cx="200" cy="200" r="200"/></clipPath>
+  </defs>
+  <style>
+    .eyes { transform-origin: 200px 222px; animation: blink 5s infinite; }
+    .glow { animation: glow 2.6s ease-in-out infinite; }
+    .bob { animation: bob 6s ease-in-out infinite; }
+    @keyframes blink { 0%,92%,100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+    @keyframes glow { 50% { opacity: .35; } }
+    @keyframes bob { 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <g clip-path="url(#circ)">
+    <rect width="400" height="400" fill="url(#bgA)"/>
+    <g class="bob">
+      <!-- shoulders / hoodie -->
+      <path d="M40 420 C50 330 110 300 200 300 C290 300 350 330 360 420 Z" fill="url(#hood)"/>
+      <path d="M170 300 L200 350 L230 300" fill="none" stroke="#e0267a" stroke-width="3"/>
+      <path d="M182 318 V372 M218 318 V372" stroke="#f9a8d4" stroke-width="3" stroke-linecap="round"/>
+      <!-- neck -->
+      <path d="M178 262 H222 V306 Q200 316 178 306 Z" fill="#e8b39e"/>
+      <!-- hood back -->
+      <path d="M92 250 C80 140 130 72 200 72 C270 72 320 140 308 250 C300 300 260 310 250 300 L150 300 C140 310 100 300 92 250 Z" fill="url(#hood)"/>
+      <path d="M92 250 C80 140 130 72 200 72 C270 72 320 140 308 250" fill="none" stroke="#e0267a" stroke-opacity=".7" stroke-width="2.5"/>
+      <!-- face -->
+      <path d="M134 190 C134 128 266 128 266 190 C266 238 240 278 200 284 C160 278 134 238 134 190 Z" fill="url(#skin)"/>
+      <!-- hair fringe -->
+      <path d="M126 196 C120 120 170 100 210 104 C262 108 284 150 274 200 L262 168 L246 192 L236 150 L214 186 L204 142 L184 184 L176 146 L156 186 L150 156 Z" fill="url(#hair)"/>
+      <path d="M180 120 C196 112 222 112 238 122" fill="none" stroke="#a78bfa" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+      <!-- brows -->
+      <path d="M156 198 Q170 190 184 196 M216 196 Q230 190 244 198" fill="none" stroke="#2a1530" stroke-width="4" stroke-linecap="round"/>
+      <!-- eyes -->
+      <g class="eyes">
+        <path d="M152 222 Q168 204 186 220 Q170 238 152 222 Z" fill="#fff"/>
+        <path d="M214 220 Q232 204 248 222 Q230 238 214 220 Z" fill="#fff"/>
+        <ellipse cx="170" cy="221" rx="9" ry="12" fill="url(#iris)"/>
+        <ellipse cx="231" cy="221" rx="9" ry="12" fill="url(#iris)"/>
+        <circle cx="170" cy="222" r="4" fill="#1a0610"/><circle cx="231" cy="222" r="4" fill="#1a0610"/>
+        <circle cx="166" cy="216" r="3.2" fill="#fff"/><circle cx="227" cy="216" r="3.2" fill="#fff"/>
+        <path d="M150 220 Q168 200 188 218 M212 218 Q232 200 250 220" fill="none" stroke="#1a0f2e" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+      <!-- nose, mouth, blush -->
+      <path d="M201 236 L198 248 L203 249" fill="none" stroke="#d99a86" stroke-width="2" stroke-linecap="round"/>
+      <path d="M190 262 Q200 268 212 261" fill="none" stroke="#b5606a" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="156" cy="246" rx="11" ry="5" fill="#f472b6" opacity=".3"/>
+      <ellipse cx="246" cy="246" rx="11" ry="5" fill="#f472b6" opacity=".3"/>
+      <!-- headphones -->
+      <path d="M118 210 C110 120 290 120 282 210" fill="none" stroke="#1f1424" stroke-width="12" stroke-linecap="round"/>
+      <rect x="104" y="196" width="34" height="58" rx="14" fill="#1f1424" stroke="#e0267a" stroke-width="2"/>
+      <rect x="262" y="196" width="34" height="58" rx="14" fill="#1f1424" stroke="#e0267a" stroke-width="2"/>
+      <rect class="glow" x="113" y="212" width="16" height="26" rx="6" fill="#e0267a"/>
+      <rect class="glow" x="271" y="212" width="16" height="26" rx="6" fill="#e0267a"/>
+    </g>
+    <!-- rim light -->
+    <circle cx="200" cy="200" r="196" fill="none" stroke="#e0267a" stroke-opacity=".35" stroke-width="6"/>
+  </g>
+</svg>
   </g>
   <rect x=".5" y=".5" width="1199" height="459" rx="20" fill="none" stroke="url(#edge)" stroke-opacity=".7"/>
 </svg>
