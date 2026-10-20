@@ -1,31 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="t d">
-  <title id="t">MIAN G — jee788889-source</title>
-  <desc id="d">Dark banner with the name MIAN G and the focus areas: web development, business automation, AI integrations, SEO.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-labelledby="t d">
+  <title id="t">Mian G. — Business automation, AI workflows, web</title>
+  <desc id="d">Dark crimson hero card with the name Mian G. in large serif type, a tagline, service chips, and an MG monogram inside a glowing ring.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0f1a"/>
-      <stop offset="1" stop-color="#111a2e"/>
+      <stop offset="0" stop-color="#0c0509"/>
+      <stop offset=".55" stop-color="#2a0b1b"/>
+      <stop offset="1" stop-color="#4a0f2c"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#5c1430"/><stop offset=".5" stop-color="#e0267a"/><stop offset="1" stop-color="#5c1430"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#e0267a" stop-opacity=".55"/><stop offset="1" stop-color="#e0267a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="disc" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#3a0f24"/><stop offset="1" stop-color="#12060c"/></radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#f9a8d4" opacity=".08"/></pattern>
+    <clipPath id="c"><rect width="1200" height="460" rx="20"/></clipPath>
   </defs>
   <style>
-    .cube { fill: none; stroke: url(#accent); stroke-width: 2; opacity: .55; transform-origin: 1000px 150px; animation: spin 18s linear infinite; }
-    .glow { animation: pulse 4s ease-in-out infinite; }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    .mono { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; }
+    .pulse { animation: pulse 5s ease-in-out infinite; }
+    .spin { transform-origin: 960px 230px; animation: spin 14s linear infinite; }
+    .rev { transform-origin: 960px 230px; animation: spin 22s linear infinite reverse; }
+    .blink { animation: blink 1.2s steps(1) infinite; }
+    .sheen { animation: sheen 7s ease-in-out infinite; }
+    .up { animation: up .9s ease-out both; }
+    .d1 { animation-delay: .15s; } .d2 { animation-delay: .3s; } .d3 { animation-delay: .45s; }
+    @keyframes pulse { 50% { opacity: .45; } }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes pulse { 50% { opacity: .35; } }
-    @media (prefers-reduced-motion: reduce) { .cube, .glow { animation: none; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes sheen { 0%,100% { transform: translateX(-300px); } 50% { transform: translateX(1400px); } }
+    @keyframes up { from { opacity: 0; transform: translateY(14px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
-  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
-  <circle class="glow" cx="1000" cy="150" r="110" fill="#38bdf8" opacity=".12"/>
-  <!-- isometric cube: the "3D" motif -->
-  <g class="cube">
-    <path d="M1000 70 L1070 110 L1070 190 L1000 230 L930 190 L930 110 Z"/>
-    <path d="M930 110 L1000 150 L1070 110 M1000 150 L1000 230"/>
+  <g clip-path="url(#c)">
+    <rect width="1200" height="460" fill="url(#bg)"/>
+    <rect width="1200" height="460" fill="url(#dots)"/>
+    <circle class="pulse" cx="960" cy="230" r="260" fill="url(#glow)"/>
+    <g transform="skewX(-18)"><rect class="sheen" x="0" y="0" width="120" height="460" fill="#fff" opacity=".035"/></g>
+
+    <rect x="56" y="48" width="300" height="30" rx="15" fill="#000" fill-opacity=".35" stroke="#5c1430"/>
+    <circle class="pulse" cx="76" cy="63" r="4" fill="#e0267a"/>
+    <text x="90" y="68" class="mono" font-size="13" fill="#f9a8d4" letter-spacing="1">~/automation · ai · web</text>
+
+    <g class="up"><text x="56" y="128" class="mono" font-size="13" fill="#b48a9d" letter-spacing="3">01 · AUTOMATION · AI WORKFLOWS · WEB · SEO</text></g>
+    <g class="up d1"><text x="50" y="250" class="serif" font-size="112" fill="#fdf2f8">Mian G<tspan class="blink" fill="#e0267a">.</tspan></text></g>
+    <g class="up d2"><text x="56" y="300" class="serif" font-style="italic" font-size="26" fill="#f5d0e2">Automating busywork. Building systems that run themselves.</text></g>
+
+    <g class="up d3 mono" font-size="13" letter-spacing="1">
+      <rect x="56" y="350" width="214" height="36" rx="8" fill="#e0267a"/><text x="74" y="373" fill="#fff">BUSINESS AUTOMATION</text>
+      <rect x="282" y="350" width="150" height="36" rx="8" fill="none" stroke="#e0267a"/><text x="300" y="373" fill="#f9a8d4">AI WORKFLOWS</text>
+      <rect x="444" y="350" width="104" height="36" rx="8" fill="none" stroke="#e0267a"/><text x="462" y="373" fill="#f9a8d4">WEB DEV</text>
+      <rect x="560" y="350" width="64" height="36" rx="8" fill="none" stroke="#e0267a"/><text x="578" y="373" fill="#f9a8d4">SEO</text>
+    </g>
+
+    <circle class="spin" cx="960" cy="230" r="142" fill="none" stroke="url(#edge)" stroke-width="3" stroke-dasharray="210 90" stroke-linecap="round"/>
+    <circle class="rev" cx="960" cy="230" r="160" fill="none" stroke="#f9a8d4" stroke-opacity=".35" stroke-dasharray="2 10"/>
+    <circle cx="960" cy="230" r="124" fill="url(#disc)" stroke="#e0267a" stroke-opacity=".5"/>
+    <text x="960" y="262" text-anchor="middle" class="serif" font-size="96" fill="#fdf2f8">MG</text>
   </g>
-  <text x="80" y="135" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#f1f5f9">MIAN G</text>
-  <rect x="82" y="155" width="120" height="4" rx="2" fill="url(#accent)"/>
-  <text x="80" y="200" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="24" fill="#94a3b8">Web development · Business automation · AI integrations · SEO</text>
+  <rect x=".5" y=".5" width="1199" height="459" rx="20" fill="none" stroke="url(#edge)" stroke-opacity=".7"/>
 </svg>
